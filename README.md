@@ -9,7 +9,6 @@
 ## 📑 Table of Contents
 
 * [Introduction](#introduction)
-* [Installation & Dependencies](#installation--dependencies)
 * [Overview](#overview)
 * [Main Functions](#main-functions)
 * [Events](#events)
@@ -17,6 +16,7 @@
 * [Security Considerations](#security-considerations)
 * [Interface Support](#interface-support)
 * [License](#license)
+* [Installation & Dependencies (Using Foundry)](#Installation-Dependencies)
 
 ---
 
@@ -25,18 +25,6 @@
 `CertificateNFTEduLATAM` is a Solidity smart contract designed to issue NFT-based educational certificates under the **BnE.EduLATAM** initiative. It utilizes the ERC-721 standard and enables an authorized operator to mint, assign metadata, and manage certificates securely.
 
 This contract reflects the vision of *“Edu.LATAM: Web3 for the Future”* — bringing transparency, ownership, and verifiability to education in Latin America using blockchain.
-
----
-
-## ⚙️ Installation & Dependencies
-
-Ensure your environment uses **OpenZeppelin Contracts v5.0.0 or higher**.
-
-Install using npm:
-
-```bash
-npm install @openzeppelin/contracts
-```
 
 ---
 
