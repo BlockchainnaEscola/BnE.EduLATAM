@@ -156,3 +156,86 @@ Fully compliant with:
 This contract is licensed under the **AGPL-3.0-only** license.
 See: [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.html)
 
+
+
+
+Great! Here's the updated **"Installation & Dependencies"** section with instructions for using **[Foundry](https://book.getfoundry.sh/)** — including commands for **installing**, **deploying**, and **testing** the smart contract:
+
+---
+
+## ⚙️ Installation & Dependencies (Using Foundry)
+
+This project uses [Foundry](https://book.getfoundry.sh/) — a blazing fast, modular toolkit for Ethereum application development written in Rust.
+
+### 📦 Prerequisites
+
+Install Foundry:
+
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+```
+
+Clone your smart contract project (or create one):
+
+```bash
+forge init certificate-nft-edulatam
+cd certificate-nft-edulatam
+```
+
+### 📚 Add OpenZeppelin Contracts
+
+Install OpenZeppelin v5:
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+```
+
+> 💡 Use `--no-commit` if you're managing git manually.
+
+### 🧪 Compile the Project
+
+```bash
+forge build
+```
+
+---
+
+## 🚀 Deployment with Foundry
+
+To deploy the contract, create a **deployment script** under `script/` (e.g. `Deploy.s.sol`), and run:
+
+```bash
+forge script script/Deploy.s.sol --rpc-url <YOUR_RPC_URL> --private-key <YOUR_PRIVATE_KEY> --broadcast
+```
+
+Replace:
+
+* `<YOUR_RPC_URL>` with the RPC endpoint of your target network (e.g., Alchemy, Infura, Anvil).
+* `<YOUR_PRIVATE_KEY>` with the private key of the deployer wallet.
+
+Use `--verify` to verify on Etherscan if API key is configured.
+
+---
+
+## 🧪 Testing with Foundry
+
+Write your tests in the `test/` folder using Solidity (recommended) or Forge’s cheatcodes.
+
+Example test command:
+
+```bash
+forge test
+```
+
+With verbose output:
+
+```bash
+forge test -vvv
+```
+
+With gas reporting:
+
+```bash
+forge test --gas-report
+```
